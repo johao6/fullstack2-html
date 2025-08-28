@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -31,19 +31,45 @@
     </div>
 
     </div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="form-signin w-100 m-auto" style="max-width: 400px; padding: 2rem;">
+        <div class="form-signin w-100 m-auto" style="max-width: 600px; padding: 2rem;">
             <form>
                 <img src="img/level-up-gamer.svg" alt="" class="d-block mx-auto mb-4" >
-                <h1>Iniciar Sesion</h1>
+                <h1>Crear cuenta</h1>
                 <div class="form-floating">
-                    <input type="correo" class="form-control" id="floatingInput" placeholder="Correo@ejemplo.com"> 
-                    <label for="floatingInput">Correo electronico</label>
+                    <input type="text" class="form-control" id="floatingname" placeholder="Nombre completo"> 
+                    <label for="floatingname">Nombre completo</label>
                 </div>
                 <div class="form-floating">
-                    <input type="contrasena" class="form-control" id="floatingPassword" placeholder="contraseña">
+                    <input type="correo" class="form-control" id="floatingcorreo" placeholder="Correo electronico">
+                    <label for="floatingcorreo">Correo electronico</label>
+                </div>
+                <div class="form-floating">
+                    <input type="contrasena" class="form-control" id="floatingcontrasena" placeholder="contraseña">
                     <label for="floatingPassword">Contraseña</label>
                 </div>
-                <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+                <div class="form-floating">
+                    <input type="confirmcontrasena" class="form-control" id="floatingconfirmcontrasena" placeholder="Confirmar contraseña">
+                    <label for="floatingconfirmcontrasena">Confirmar contraseña</label>
+                </div>
+                <div class="form-floating">
+                    <input type="telefono" class="form-control" id="floatingtelefono" placeholder="Teléfono">
+                    <label for="floatingtelefono">Teléfono (opcional)</label>
+                </div>
+                <div class="dropdown">
+                    <select name="region" id="region" class="form-control">
+                        <option value="">--Seleccione Región--</option>
+                        <option value="region1">Región 1</option>
+                        <option value="region2">Región 2</option>
+                        <option value="region3">Región 3</option>
+                    </select>
+                    <select name="ciudad" id="ciudad">
+                        <option value="">--Seleccione Ciudad--</option>
+                        <option value="ciudad1">Ciudad 1</option>
+                        <option value="ciudad2">Ciudad 2</option>
+                        <option value="ciudad3">Ciudad 3</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Registrar</button>
             </form>
         </div>
     </div>
